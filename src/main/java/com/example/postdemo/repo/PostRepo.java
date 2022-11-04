@@ -6,18 +6,6 @@ import com.example.postdemo.dto.PostDto;
 
 import java.util.List;
 
-public interface PostRepo {
-    List<Post> findAll();
+public interface PostRepo   {
 
-
-
-     Post findById(long id);
-
-    void save(Post post);
-
-//    void updatePostById(long id, PostDto p);
-//
-//    void deleteById(long id);
-//
-//    PostV2 findByAuthor(String author);
 }
