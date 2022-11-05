@@ -15,7 +15,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PostController {
 
-    PostService postService;
+    @Autowired
+    private PostService postService;
 
     @GetMapping("/")
     public List<PostDto> getPosts(){

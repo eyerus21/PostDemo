@@ -17,7 +17,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PostServiceImpl implements PostService {
 
-
+    @Autowired
     private PostRepo postRepo;
 
     @Autowired
