@@ -11,4 +11,6 @@ public interface PostService {
     PostDto findById(int id);
 
     void save(PostDto postDto);
+
+    void savePost(Post post);
 }

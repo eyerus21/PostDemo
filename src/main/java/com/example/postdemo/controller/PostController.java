@@ -26,12 +26,25 @@ public class PostController {
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/{id}") // api/v1/products/{id}
     public PostDto getProduct(@PathVariable("id")int id){
+
         return postService.findById(id);
+
     }
+
+//    @ResponseStatus(HttpStatus.CREATED)
+//    @PostMapping
+//    public void save(@RequestBody PostDto postDto){
+//        postService.save(postDto);
+//    }
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
-    public void save(@RequestBody PostDto postDto){
-        postService.save(postDto);
+//    public void savePost(@RequestBody Post  post){
+//        postService.savePost(post);
+//    }
+    public void savePost(@RequestBody String title,  @RequestBody  String author, @RequestBody String content){
+        System.out.println(title);
     }
+
+
 }

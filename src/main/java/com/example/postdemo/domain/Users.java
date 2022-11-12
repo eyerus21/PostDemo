@@ -19,8 +19,8 @@ public class Users {
     private long id;
     private String name;
 
-    @OneToMany
-    @JoinColumn
+    @ManyToMany(cascade = CascadeType.ALL)
+   // @JoinColumn
     private List<Post> posts;
 
 }
